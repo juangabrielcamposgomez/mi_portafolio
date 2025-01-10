@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+header {
+
+    background-image: url("static/logo.gif");
+    background-repeat: no-repeat;
+    background-size: 15% auto ; /* Ajustar la imagen al contenedor */
+    background-position:center; /* Centrar la imagen */
+    background-clip: border-box;
+
+
+    /* ... otros estilos de header ... */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #dc3545;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block; /* Mejora para la responsividad */
+    margin: 10px;
+}
+.mi-iframe {
+    width: 800px;
+    height: 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px; /* Mejora visual */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    /* Eliminamos "position: fixed" para un footer normal */
+}
+
+/* Estilos adicionales para el formulario */
+#formularioComentarios label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formularioComentarios input,
+#formularioComentarios textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Juan Campos Gomez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Mi Portafolio</h1>
+        <p>Juan Campos Gomez.<br>
+            Programador y Analista de Sistema.</p>
+
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#lenguajes">Lenguajes</a></li>
+            <li><a href="#frameworks">Frameworks</a></li>
+            <li><a href="#contacto">Contactame</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container">
+    <section id="perfil">
+        <h2>Perfil</h2>
+        <p>
+            Soy Juan Campos Gómez, un apasionado por la tecnología y el desarrollo de software.<br>
+            Mi formación académica se centra en bases de datos SQL y diagramas UML,<br>
+            así como en la notación de negocios BPMN . Casos de usuos y sus descripciones<br><br>
+            Junto a mi equipo académico, aplicamos metodologías ágiles como Scrum en el ciclo de vida del desarrollo de software.<br>
+            Hemos creado:<br><br>
+            •	Aplicaciones web: Simulamos un taller mecánico utilizando PHP como lenguaje de programación y MySQL como motor de base de datos.<br><br>
+            •	Aplicaciones móviles: Desarrollamos una aplicación simulando un sistema de pedidos para un minimarket en Kotlin con el IDE Android Studio .<br><br>
+            •	Para el proyecto de especialización realizamos un proyecto de un video juego para mejorar la comprensión lectora de los niños de educación básica
+                aplicando el método del silabario hispanoamericano donde creamos la documentación y estamos en la fase de diseño donde mi compañero
+                Felipe aliaga creo los recursos en pixel art, yo  programe y desarrolle el prototipo en motor grafico UNITY y el lenguaje de programación C# .<br><br>
+                Mis habilidades blandas:<br><br>
+            •	Trabajo en equipo de forma colaborativa.<br><br>
+            •	Adaptabilidad al cambio y a nuevas tecnologías.<br><br>
+            •	Me gusta consultar la documentación oficial para asegurarme de utilizar las tecnologías correctamente.<br>
+
+        </p>
+        <div id="contenidoNoticia"></div>
+    </section>
+
+    <section id="lenguajes">
+        <h2>Lenguajes de Programación</h2>
+        <ul>
+            <li><iframe src="lenguajes/kotlin.html" class="mi-iframe"></iframe></li>
+
+        </ul>
+        <ul>
+            <li><iframe src="lenguajes/python.html.html" class="mi-iframe"></iframe></li>
+
+        </ul>
+        <ul>
+            <li><iframe src="lenguajes/unity.html.html" class="mi-iframe"></iframe></li>
+
+        </ul>
+
+    </section>
+
+    <section id="frameworks">
+        <h2>Frameworks</h2>
+        <p>Esta página está siendo creada con Ktor un frameword para desarrollo multiplataforma el cual está diseñado
+            para KOTLIN. El cual me encuentro aprendiendo.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o comentario? <a href="mailto:juan.camposgomez@gmail.com">Envíame un correo electrónico</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Juan Campos Gomez. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    fetch('lenguajes/kotlin.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('kotlin-content').innerHTML = data;
+        });
+</script>
+<script>
+    fetch('lenguajes/python.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('kotlin-content').innerHTML = data;
+        });
+</script>
+<script>
+    fetch('lenguajes/unity.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('kotlin-content').innerHTML = data;
+        });
+</script>
+</body>
+</html>
