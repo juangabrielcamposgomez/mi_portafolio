@@ -14,7 +14,7 @@ body {
 
 header {
 
-    background-image: url("static/logo.gif");
+    background-image: url("logo.gif");
     background-repeat: no-repeat;
     background-size: 15% auto ; /* Ajustar la imagen al contenedor */
     background-position:center; /* Centrar la imagen */
