@@ -54,15 +54,15 @@
     <section id="lenguajes">
         <h2>Lenguajes de Programación</h2>
         <ul>
-            <li><iframe src="lenguajes/kotlin.html" class="mi-iframe"></iframe></li>
+            <li><iframe src="/kotlin.html" class="mi-iframe"></iframe></li>
 
         </ul>
         <ul>
-            <li><iframe src="lenguajes/python.html.html" class="mi-iframe"></iframe></li>
+            <li><iframe src="/python.html.html" class="mi-iframe"></iframe></li>
 
         </ul>
         <ul>
-            <li><iframe src="lenguajes/unity.html.html" class="mi-iframe"></iframe></li>
+            <li><iframe src="/unity.html.html" class="mi-iframe"></iframe></li>
 
         </ul>
 
@@ -89,21 +89,21 @@
 
 <script src="script.js"></script>
 <script>
-    fetch('kotlin.txt')
+    fetch('/kotlin.txt')
         .then(response => response.text())
         .then(data => {
             document.getElementById('kotlin-content').innerHTML = data;
         });
 </script>
 <script>
-    fetch('python.txt')
+    fetch('/python.txt')
         .then(response => response.text())
         .then(data => {
             document.getElementById('kotlin-content').innerHTML = data;
         });
 </script>
 <script>
-    fetch('unity.txt')
+    fetch('/unity.txt')
         .then(response => response.text())
         .then(data => {
             document.getElementById('kotlin-content').innerHTML = data;
