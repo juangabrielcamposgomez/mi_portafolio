@@ -6,44 +6,69 @@ body {
 }
 
 .container {
-  width: 80%; 
-  margin: 0 auto;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+/* Estilos para colocar la imagen al lado del logo */
+header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 960px;
+    margin-left: 30px;
+}
+
+header img {
+    max-height: 80px; /* Ajusta este valor para que la imagen no sea más grande que el logo */
+    margin-left: 20px;
+    border-radius: 50%; /* Esto hace que la imagen sea redonda */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el círculo sin deformarse */
+    margin-top: 20px;
+}
+.container1 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .sidebar {
+        display: none; /* Ocultar la barra lateral en tablets */
+    }
+    nav ul {
+        flex-direction: column; /* Menú vertical en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+    h1 {
+        font-size: 24px; /* Título más pequeño en móviles */
+    }
+    .imagen {
+        width: 100%; /* Imágenes ocupan todo el ancho */
+    }
 }
 
 header {
 
-    background-image: url("logo.gif");
+    background-image: url("static/logo.gif");
     background-repeat: no-repeat;
-    background-size: 15% auto ; /* Ajustar la imagen al contenedor */
+    background-size: 20% auto ; /* Ajustar la imagen al contenedor */
     background-position:center; /* Centrar la imagen */
     background-clip: border-box;
 
 
     /* ... otros estilos de header ... */
 }
-@media (max-width: 768px) { 
-  .container { 
-    width: 90%; 
-  }
-  .sidebar {
-    display: none; /* Ocultar la barra lateral en tablets */
-  }
-  nav ul {
-    flex-direction: column; /* Menú vertical en tablets */
-  }
-}
 
-@media (max-width: 480px) { 
-  .menu { 
-    display: none; 
-  }
-  h1 {
-    font-size: 24px; /* Título más pequeño en móviles */
-  }
-  .imagenes {
-    width: 100%; /* Imágenes ocupan todo el ancho */
-  }
-}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -88,18 +113,3 @@ footer {
     /* Eliminamos "position: fixed" para un footer normal */
 }
 
-/* Estilos adicionales para el formulario */
-#formularioComentarios label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-#formularioComentarios input,
-#formularioComentarios textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
